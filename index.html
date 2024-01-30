@@ -10,13 +10,72 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center;  }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet"  href="./styles.css"/>
 </head>
 <body>
   <main>
-
+      <div class="container">
+        <section id="score-section">
+          <div id="score-content">
+          <h1 id="title">Your Result</h1>
+          <div id="circular-bg">
+            <span id="score">76</span>
+            <span id="total-score">of 100</span>
+          </div>
+          <p id="reaction">Great</p>
+          <p id="score-summary">You scored higher than 65% of the people who had taken these tests.</p>
+          </div>
+        </section>
+        <section id="summary">
+          <h2>Summary</h2>
+          <div id="cards-container">
+            <div class="card bg-red">
+              <div class="card-left-content text-red">
+                <img src="./assets/images/icon-reaction.svg" alt="rection-icon"/>
+                <p>Reaction</p>
+              </div>
+              <div>
+                <span class="card-score">80 </span>
+                <span class="card-score-total"> / 100</span>
+              </div>
+            </div>
+            <div class="card bg-yellow">
+              <div class="card-left-content text-yellow">
+                <img src="./assets/images/icon-memory.svg" alt="memory-icon"/>
+                <p>Memory</p>
+              </div>
+              <div>
+                <span class="card-score">92 </span>
+                <span class="card-score-total"> / 100</span>
+              </div>
+            </div>
+            <div class="card bg-green">
+              <div class="card-left-content text-green">
+                <img src="./assets/images/icon-verbal.svg" alt="verbal-icon"/>
+                <p>Verbal</p>
+              </div>
+              <div>
+                <span class="card-score">61 </span>
+                <span class="card-score-total"> / 100</span>
+              </div>
+            </div>
+            <div class="card bg-blue">
+              <div class="card-left-content text-blue">
+                <img src="./assets/images/icon-visual.svg" alt="vision-icon"/>
+                <p>Visual</p>
+              </div>
+              <div>
+                <span class="card-score">72 </span>
+                <span class="card-score-total"> / 100</span>
+              </div>
+            </div>
+          </div>
+          <button>Continue</button>
+        </section>
+      </div>
   </main>  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
